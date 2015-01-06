@@ -1,28 +1,71 @@
-\documentclass[11pt]{report}
-\usepackage[pdftex]{graphicx}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
 
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{ragged2e}
+\usepackage[none]{hyphenat}
+\usepackage[hidelinks]{hyperref}
+\usepackage{listings}
+\usepackage[title,titletoc,toc]{appendix}
 
 \begin{document}
-\begin{figure}[!t]
-\centering
-\includegraphics{images/uva.jpeg}
-\end{figure}
-\title{\textbf{Research Project 1 
-} \\ Proposal}
-\author{Rusu Diana \\ Nikolaos Triantafyllidis\\ \\
-~\emph{University of Amsterdam 
-        } \\ \\Master : System and Network Engineering}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
+\center
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics{images/uva.jpeg}\\[0.5cm]% Include a department/university logo - this will require the graphicx package
+ 
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+\textsc{\Large System and Network Engineering, MSc}\\[0.5cm] 
+\textsc { \large Research Project 1}\\[0.4cm] % Title of your document
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+\HRule \\[0.4cm]
+{ \huge \bfseries Security Intelligence Data Mining}\\[0.4cm] % Title of your document
+{ \large \bfseries Research Proposal}\\[0.4cm] % Title of your document
+\HRule \\[0.4cm]
 
 
-\date{February 2015}
 
-\maketitle
+
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+
+\large Diana Rusu\\
+{\bfseries Diana.Rusu@os3.nl}\\[0.5cm]
+\large Nikolaos Petros Triantafyllidis\\
+\bfseries Nikolaos.Triantafyllidis@os3.nl\\[2cm]
+
+{\large \today} 
+
+\end{titlepage}
 
 \tableofcontents
 
 \newpage
 
 \section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
 \paragraph{}
 With the increasing amount of data across the Internet, security has became a big concern for different companies. Ensuring security for their infrastructure and being able to find threats in real time it's a crucial point. Data mining techniques can be used in discovering threats and future attacks from social websites. The primary points in this research will focus on the discovering and analysing possible security leaks. Techniques which are already available have been applied in different fields but not in this area.
 
@@ -38,7 +81,7 @@ How are the keywords ascertained?
 Process, analyse the resulted data, how? (define the patterns and models,training set)
 
 
-\section*{Related work}
+\section{Related work}
 
 Several studies have been conducted in the past in the field of social web mining. One recent book that has been released provides a virtual machine where you can try and "discover who’s making connections with whom, what they’re talking about, and where they’re located?" \label{some:try}
 
@@ -47,12 +90,12 @@ Several studies have been conducted in the past in the field of social web minin
 The main purpose of this project is to define and implement a security intelligence architecture that will be able to extract and analyse possible attacks to a related company. 
 
  
-\section*{Methodology}
+\section{Methodology}
 
-\section*{Experimental installation requirements}
+\section{Experimental installation requirements}
 
 
-\section*{Ethical implications}
+\section{Ethical implications}
 
 This research will focus and mine the data from the public sources. If any sensitive information or security attacks will be encountered during the analysing of this data, targeted companies will be informed. 
 
