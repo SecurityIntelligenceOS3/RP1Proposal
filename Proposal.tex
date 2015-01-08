@@ -13,6 +13,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{listings}
 \usepackage[title,titletoc,toc]{appendix}
+\usepackage{kantlipsum}
 
 \begin{document}
 
@@ -66,8 +67,9 @@
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
+\parbox{\linewidth}{
 With the increasing number of cyber-attacks and the growth of computer crime worldwide, it becomes apparent that IT security is a major concern and crucial survival factor for large companies, organisations and institutions of any sort. Security Operations departments working to ensure confidentiality, integrity and availability for the system infrastructure of their organisation, invest huge parts of their time and effort in detecting threats in real time. A very valuable source of security intelligence, vital to cyber-risk assessment, is information mined from data posted on public sites such as "pastebins" or social networks. However, this is a very cumbersome task due to the lack of Natural Language Processing capabilities in most of the existing tools. Moreover, as recent events have showcased, several threats arise from governments and criminal associations originating from countries whose languages use non-latin scripts (Chinese, Russian, Korean, etc.). It is, hence, important to have data mining tools that provide support for such alphabets and languages, since a lot of a security intelligence can be discovered in such texts. The main goals of this research project will be to explore the various public data and detect the most appropriate among them. Moreover, numerous current data analytics techniques as well as their application on security related issues will be assessed. Lastly the above knowledge will be applied on the implementation of a simple system that will work as a proof-of-concept and help determine the technical feasibility, storage requirements and operational cost of such a system.  
-
+}
 \section{Research Questions}
 This topic is admittedly very open and several specific research questions can be defined some of which we will try to answer to some extent. From the main questions several further subquestions can be derived. These are the following:
 
@@ -103,12 +105,9 @@ There is a lot of literature around the field of Data Mining and more recently W
 
 \section{Scope and Limitations}
 
-The main purpose of this project is to define and implement a security intelligence architecture that will be able to extract and analyse possible attacks to a related company. 
-
  
 \section{Methodology}
 \paragraph{}
-The system proposed comprises several stages that will be defined theoretical and then applied to a proof of concept architecture. Web mining is categorized in web content mining, web structure mining and web usage mining. The purpose of this study will focus on the web content mining, as the desired outcome is to extract the relevant security alarms that might rise in real time from different social sources. Defining the possible reliable source of information is an important task that will be taken in consideration. Many sources might be relevant or irrelevant for searching possible attacks and threats.  Crawling for social websites has to be done in a clear manner. Not all the data even from a relevant source is important. Precision and recall are two methods that will be take in consideration considering this aspect. Unstructured data that will be retrieved from the crawling process will be further analyse.
 
 \section{Experimental installation requirements}
 
