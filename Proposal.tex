@@ -73,12 +73,17 @@
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
 \parbox{\linewidth}{
-With the increasing number of cyber-attacks and the growth of computer crime worldwide, it becomes apparent that IT security is a major concern and crucial survival factor for large companies, organisations and institutions of any sort. Security Operations departments working to ensure confidentiality, integrity and availability for the system infrastructure of their organisation, invest huge parts of their time and effort in detecting threats in real time. A very valuable source of security intelligence, vital to cyber-risk assessment, is information mined from data posted on public sites such as "pastebins" or social networks. However, this is a very cumbersome task due to the lack of Natural Language Processing capabilities in most of the existing tools. Moreover, as recent events have showcased, several threats arise from governments and criminal associations originating from countries whose languages use non-latin scripts (Chinese, Russian, Korean, etc.). It is, hence, important to have data mining tools that provide support for such alphabets and languages, since a lot of a security intelligence can be discovered in such texts. The main goals of this research project will be to explore the various public data and detect the most appropriate among them. Moreover, numerous current data analytics techniques as well as their application on security related issues will be assessed. Lastly the above knowledge will be applied on the implementation of a simple system that will work as a proof-of-concept and help determine the technical feasibility, storage requirements and operational cost of such a system. This project was proposed by and will carried out in co-operation with Deloitte Digital. 
+With the increasing number of cyber-attacks and the growth of computer crime worldwide, it becomes apparent that IT security is a major concern and crucial survival factor for large companies, organisations and institutions of any sort. Security Operations departments working to ensure confidentiality, integrity and availability for the system infrastructure of their organisation, invest huge \cite{cyber} parts of their time and effort in detecting threats in real time. A very valuable source of security intelligence, vital to cyber-risk assessment, is information mined from data posted on public sites such as "pastebins" or social networks. However, this is a very cumbersome task due to the lack of Natural Language Processing capabilities in most of the existing tools. Moreover, as recent events have showcased \cite{sony}, several threats arise from governments and criminal associations originating from countries whose languages use non-latin scripts (Chinese, Russian, Korean, etc.). It is, hence, important to have data mining tools that provide support for such alphabets and languages, since a lot of a security intelligence can be discovered in such texts. The main goals of this research project will be to explore the various public data and detect the most appropriate among them. Moreover, numerous current data analytics techniques as well as their application on security related issues will be assessed. Lastly the above knowledge will be applied on the implementation of a simple system that will work as a proof-of-concept and help determine the technical feasibility, storage requirements and operational cost of such a system. This project was proposed by and will carried out in co-operation with Deloitte NL. 
 }
-  
-
+\newpage
 \section{Research Questions}
-This topic is admittedly very open and several specific research questions can be defined some of which we will try to answer to some extent. From the main questions several further subquestions can be derived. These are the following:
+This topic is admittedly very open but it can be narrowed down to several specific research questions some of which we will try to answer to some extent. The main question that we will be trying to answer is the following:\\[0.1cm]
+
+\noindent
+\textbf{How can we effectively use public sources to obtain real time information about security incidents?}\\[0.1cm]
+
+\noindent
+This question can be analysed into more specific parts that cover the topic to some extent, as follows:
 
 \begin{enumerate}
 	\item How can the raw data be effectively collected from the public sources? 
@@ -108,29 +113,44 @@ The proposed system extensions can spawn further research questions, namely on t
 There is a lot of literature around the field of Data Mining and more recently Web Mining. The most prominent and recent case is the book 'Mining The Social Web' by M.Russel \cite{socialweb} that deals with exploring and mining information from social websites (e.g., Facebook, Twitter, LinkedIn, Google+, GitHub, etc.). There are also several academic papers and books that deal with applying Data Mining to System Security. One example is a system proposed by the university of Minnesota, called MINDS, that employs various Data Mining in Intrusion Detection. The system is described in their paper 'Data Mining for Cyber Security' \cite{minds}.  Another example is a system proposed by the Dutch company Sentient in co-operation with the Amsterdam Police Force \cite{police} aiming to provide Data Analytics operations automation while on the same time minimising the technical expertise needed by the system user. 
 
 \section{Methodology}
-This project will be carried out with the aid of Deloitte Digital, Netherlands. The first step is to get acquainted with the Cyber-Risk and Data Analytics teams of the company and their people. When directed to the appropriate experts on each respective field (Security, Data Analytics, NLP, etc.) we will be working closely with them to collect the needed knowledge and expertise in order to reduce an effective risk assessment model. This will be made possible by applying Data Mining techniques that are already in use in other fields (economic risk assessment, marketing, etc.) on security issues. In parallel we will start designing and implementing the Information Retrieval part of the system. Once the appropriate amount of Data has been gathered from public sources we will apply the appropriate techniques that have been proposed to us on the collected dataset in order to design the risk assessment model. The next step will be to apply the designed model on new data and evaluate the effectiveness of the model. Lastly, based on the gathered experience and knowledge we will try to design a modular and extensible system architecture that deploys the designed techniques. Based on that design we will attempt to implement a simple proof of concept that will help us define the resource requirements and operational cost of such a system. 
+This project will be carried out with the aid of Deloitte Risk Services, Netherlands. The first step is to get acquainted with the Cyber-Risk Services and Data Analytics teams of the company and their people. When directed to the appropriate experts on each respective field (Security, Data Analytics, NLP, etc.) we will be working closely with them to collect the needed knowledge and expertise in order to reduce an effective risk assessment model. This will be made possible by applying Data Mining techniques that are already in use in other fields (economic risk assessment, marketing, etc.) on security issues. In parallel we will start designing and implementing the Information Retrieval part of the system. Once the appropriate amount of Data has been gathered from public sources we will apply the appropriate techniques that have been proposed to us on the collected dataset in order to design the risk assessment model. The next step will be to apply the designed model on new data and evaluate the effectiveness of the model. Lastly, based on the gathered experience and knowledge we will try to design a modular and extensible system architecture that deploys the designed techniques. Based on that design we will attempt to implement a simple proof of concept that will help us define the resource requirements and operational cost of such a system. 
 
-\section{Planing}
+\section{Planning}
 
 \begin {table}[!h]
-\begin{tabular}[!h]{|L{1.2cm}|C{13cm}|}
+\begin{tabular}[!h]{|l|c|r|}
 \hline
-Week & Task\\
+Week & Task & Deliverables\\
 \hline
-First & Background Research, Familiarisation with the company, Project Proposal\\
+First & Background Research&\\
 \hline
-Second & Expert knowledge gathering, Design \& Implement IR system\\
+First &  Familiarisation with the company&\\
 \hline
-Third & Risk assessment model design, Application of the model on new data\\
+First & Project Proposal Composition&Project Proposal\\
 \hline
-Fourth & System requirements definition, Architecture Design, Putting together the demo, Report Composition\\ 
+Second & Expert knowledge gathering&\\
+\hline
+Second &Design \& Implement IR system& Information Retrieval Module\\
+\hline
+Third & Risk assessment model design&\\
+\hline
+Third & Application of the model on new data& Data Mining Module\\
+\hline
+Fourth & System requirements definition& \\ 
+\hline
+Fourth & Architecture Design& Architectural Scheme\\ 
+\hline
+Fourth & Putting together the demo & Proof of concept\\ 
+\hline
+Fourth & Report Composition & Final Report\\ 
 \hline
 \end{tabular}
 \caption {Work Planning Table} 
 \end{table}
 
 \section{Experimental installation requirements}
-Most of the work is going to be carried out on end workstations (desktops, laptops, etc.). Depending on the amount of data collected, additional computational or storage resources might be required. In that case our assigned OS3 servers can be used or in collaboration with Deloitte Digital some company infrastructure might be used as well. As for software requirements, there are several open software tools (Database Systems, IR Systems, Web Crawlers, etc.) that can help us carry out the work. For each component of the system that has to be implemented manually the appropriate programming languages as well as libraries are going to be selected. One example is the very strong Python NLP-toolkit. 
+\parbox{\linewidth}{
+Most of the work is going to be carried out on end workstations (desktops, laptops, etc.). Depending on the amount of data collected, additional computational or storage resources might be required. In that case our assigned OS3 servers can be used. As for software requirements, there are several open software tools (Database Systems, IR Systems, Web Crawlers, etc.) that can help us carry out the work. For each component of the system that has to be implemented manually the appropriate programming languages as well as libraries are going to be selected. One example is the very strong Python NLP-toolkit.\cite{nltk} }
 
 \section{Ethical implications}
 The main part of this research comprises of exploring current techniques and their application on IT security, as well as the specification of a system that employs Data Mining techniques to collect security intelligence. In order for the models to be defined some amount of information will have to be gathered. This information will originate solely from public sources and will be mostly historical data. In the unlikely case that any previously unnoticed security issues are encountered they will be handled with discretion and communicated only towards the appropriate targets and only with the approval of the OS3 core team and Deloitte Digital. The collection or storage of personal data is not intended and any collected information will be discarded after the end of this project. The usage of shared computational and network infrastructure will only be used for the needs of this project and within the legal limits.
@@ -138,12 +158,18 @@ The main part of this research comprises of exploring current techniques and the
 \newpage
 
 \begin{thebibliography}{99}
+\bibitem{cyber}
+	Anon, (2015). [online] US cybercrime: Rising risks, reduced readiness, PWC, Available at: \url{http://www.pwc.com/en_US/us/increasing-it-effectiveness/publications/assets/2014-us-state-of-cybercrime.pdf}
+\bibitem{sony}
+	 D. Sanger, N. Perlroth.  U.S. Said to Find North Korea Ordered Cyberattack on Sony. [online] Nytimes.com. \\Available at: \url{http://www.nytimes.com/2014/12/18/world/asia/us-links-north-korea-to-sony-hacking.html?_r=0}
 \bibitem{socialweb}
   Russell, MA (2014). Mining the Social Web, O'Reily Media, USA
 \bibitem{minds}
     V. Chandola et al. Data Mining for Cyber Security, Department of Computer Science, University of Minnesota, Springer, 2006
 \bibitem{police}
    RCP van der Veer, H.T. Roo,  A. van der Zanden, Data mining for intelligence led policing, Sentient, Amsterdam Police Force, Amsterdam, The Netherlands, 2009
+\bibitem{nltk}
+Nltk.org, (2015). Natural Language Toolkit - NLTK 3.0 documentation. [online] Available at: \url{http://www.nltk.org/}
 \end{thebibliography}
 
 \end{document}
